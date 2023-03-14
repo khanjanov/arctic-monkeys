@@ -24,11 +24,20 @@
             font-size: 32px;
             color: #fff;
           }
+          &--socials {
+            img {
+              &:hover {
+                opacity: 0.3;
+                transform: scale(90%);
+              }
+            }
+          }
         }
         &__logo {
           position: absolute;
           bottom: 2%;
           left: 12%;
+          cursor: pointer;
           img {
             width: 200px;
             height: 200px;
@@ -49,6 +58,11 @@
         a {
           font-size: 16px;
           color: #919191;
+          &:hover {
+            border-bottom: 1px solid #242323;
+            padding-bottom: 4px;
+            color: #242323;
+          }
         }
       }
     }

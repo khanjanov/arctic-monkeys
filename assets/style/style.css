@@ -27,10 +27,15 @@
   font-size: 32px;
   color: #fff;
 }
+#header .container .wrapper__top__info--socials img:hover {
+  opacity: 0.3;
+  transform: scale(90%);
+}
 #header .container .wrapper__top__logo {
   position: absolute;
   bottom: 2%;
   left: 12%;
+  cursor: pointer;
 }
 #header .container .wrapper__top__logo img {
   width: 200px;
@@ -51,6 +56,11 @@
 #header .container .wrapper__navs a {
   font-size: 16px;
   color: #919191;
+}
+#header .container .wrapper__navs a:hover {
+  border-bottom: 1px solid #242323;
+  padding-bottom: 4px;
+  color: #242323;
 }
 
 #main {
@@ -128,8 +138,22 @@
 #main #music .container .wrapper__content__player {
   display: flex;
   align-items: center;
-  gap: 10%;
+  gap: 5%;
   padding: 0 20px;
+}
+#main #music .container .wrapper__content__player--image {
+  position: relative;
+}
+#main #music .container .wrapper__content__player--image::after {
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  transform: translate(-50%, 50%);
 }
 #main #music .container .wrapper__content__player--image img {
   width: 160px;
@@ -137,10 +161,23 @@
   border: 2px solid #49584f;
   border-radius: 50%;
   padding: 2px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 #main #music .container .wrapper__content__player--buttons {
   display: flex;
   gap: 40px;
+  cursor: pointer;
 }
 #main #photos {
   padding: 36px 0;
@@ -250,6 +287,38 @@
   color: #fff;
   background-color: #242323;
   padding: 16% 20px;
+}
+#main #info {
+  padding: 40px 0;
+}
+#main #info .container .wrapper {
+  width: 100%;
+  padding: 0 20px;
+}
+#main #info .container .wrapper__accordion {
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 24px;
+  color: #444;
+  padding: 18px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#main #info .container .wrapper .active:hover,
+#main #info .container .wrapper .wraper__accordion:hover {
+  background-color: #555555;
+  color: #fff;
+}
+#main #info .container .wrapper__panel {
+  font-size: 20px;
+  padding: 20px;
+  display: none;
+  background-color: #fff;
+  overflow: hidden;
+}
+#main #video {
+  padding: 40px 0;
 }
 #main #video .container .wrapper {
   width: 100%;

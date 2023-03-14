@@ -76,20 +76,45 @@
           &__player {
             display: flex;
             align-items: center;
-            gap: 10%;
+            gap: 5%;
             padding: 0 20px;
             &--image {
+              position: relative;
+              &::after {
+                content: "";
+                background-color: #fff;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                width: 28px;
+                height: 28px;
+                transform: translate(-50%, 50%);
+              }
               img {
                 width: 160px;
                 height: 160px;
                 border: 2px solid #49584f;
                 border-radius: 50%;
                 padding: 2px;
+                object-fit: cover;
+                animation: rotate 3s linear infinite;
+                animation-play-state: paused;
+              }
+              @keyframes rotate {
+                from {
+                  transform: rotate(0deg);
+                }
+
+                to {
+                  transform: rotate(360deg);
+                }
               }
             }
             &--buttons {
               display: flex;
               gap: 40px;
+              cursor: pointer;
             }
           }
         }
@@ -206,7 +231,41 @@
       }
     }
   }
+  #info {
+    padding: 40px 0;
+    .container {
+      .wrapper {
+        width: 100%;
+        padding: 0 20px;
+        &__accordion {
+          width: 100%;
+          border: none;
+          text-align: left;
+          font-size: 24px;
+          color: #444;
+          padding: 18px;
+          transition: 0.4s;
+          cursor: pointer;
+        }
+        .active,
+        .wraper__accordion {
+          &:hover {
+            background-color: #555555;
+            color: #fff;
+          }
+        }
+        &__panel {
+          font-size: 20px;
+          padding: 20px;
+          display: none;
+          background-color: #fff;
+          overflow: hidden;
+        }
+      }
+    }
+  }
   #video {
+    padding: 40px 0;
     .container {
       .wrapper {
         width: 100%;

@@ -50,10 +50,10 @@
                         <a href="#">Home</a>
                     </div>
                     <div>
-                        <a href="#">Calendar</a>
+                        <a href="#">Shop</a>
                     </div>
                     <div>
-                        <a href="#">Contact</a>
+                        <a href="#">Blog</a>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                         </div>
                         <div class="wrapper__content__player">
                             <div class="wrapper__content__player--image">
-                                <img src="./assets/pics/loooo.jpg" alt="">
+                                <img id="disc" src="./assets/pics/loooo.jpg" alt="">
                             </div>
                             <div class="wrapper__content__player--audio">
                                 <audio id="audio">
@@ -100,12 +100,10 @@
                             </div>
                             <div class="wrapper__content__player--buttons">
                                 <i class="fa-solid fa-2xl fa-backward"></i>
-                                <i class="fa-solid fa-2xl fa-play"></i>
-                                <i class="fa-solid fa-2xl fa-pause"></i>
+                                <i id="playBtn" class="fa-solid fa-2xl fa-play"></i>
                                 <i class="fa-solid fa-2xl fa-forward"></i>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -149,6 +147,42 @@
                 </div>
             </div>
         </section>
+        <section id="info">
+            <div class="container">
+                <div class="wrapper">
+                    <button class="wrapper__accordion">Alex Turner</button>
+                    <div class="wrapper__panel">
+                        <p>Alexander David Turner (born 6 January 1986) is an English singer, songwriter, and record
+                            producer. He is well known as the frontman and principal songwriter of the rock band Arctic
+                            Monkeys, with whom he has released seven albums. He has also recorded with his side project
+                            involving Miles Kane, as the Last Shadow Puppets and also as a solo artist.</p>
+                    </div>
+
+                    <button class="wrapper__accordion">Jamie Cook</button>
+                    <div class="wrapper__panel">
+                        <p>Jamie Robert Cook (born 8 July 1985) is an English guitarist and songwriter. He is best known
+                            as the guitarist and a founding member of the indie rock band Arctic Monkeys, with whom he
+                            has recorded seven studio albums..</p>
+                    </div>
+
+                    <button class="wrapper__accordion">Matthew Helders</button>
+                    <div class="wrapper__panel">
+                        <p>Matthew Helders (born 7 May 1986) is an English drummer, vocalist and songwriter. He is best
+                            known as a founding member of the indie rock band Arctic Monkeys, with whom he has recorded
+                            seven studio albums.
+
+                            In 2015, Helders collaborated with Iggy Pop and Queens of the Stone Age's Josh Homme and
+                            Dean Fertita to record Pop's studio album, Post Pop Depression (2016).</p>
+                    </div>
+
+                    <button class="wrapper__accordion">Nicholas O'Malley</button>
+                    <div class="wrapper__panel">
+                        <p>Nicholas Edward O'Malley (born 5 July 1985) is an English musician, best known as the bass
+                            guitarist and backing vocalist of English band Arctic Monkeys.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="video">
             <div class="container">
                 <div class="wrapper">
@@ -171,6 +205,7 @@
                 </div>
             </div>
         </section>
+
     </main>
     <script src="./main.js" type="module"></script>
 </body>
