@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arctic Monkeys</title>
+    <link rel="icon" type="image/x-icon" href="./assets/pics/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/components/index/style.css">
 </head>
 
 <body>
@@ -47,10 +49,10 @@
                 </div>
                 <div class="wrapper__navs">
                     <div>
-                        <a href="#">Home</a>
+                        <a href="./index.html">Home</a>
                     </div>
                     <div>
-                        <a href="#">Shop</a>
+                        <a href="./store.html" target="_blank">Store</a>
                     </div>
                     <div>
                         <a href="#">Blog</a>
@@ -63,12 +65,12 @@
         <section id="news">
             <div class="container">
                 <div class="wrapper">
-                    <div class="wrapper__news">
+                    <div class="wrapper__news" data-aos="fade-right">
                         <span>NEWS</span>
                         <p>“Arctic Monkeys, fired up, gave us the <br>concert of the year” <span>- FAST magazine</span>
                         </p>
                     </div>
-                    <div class="wrapper__details">
+                    <div class="wrapper__details" data-aos="fade-left">
                         <h2>DETAILS</h2>
                         <p>
                             Based in Sheffield, UK <br>
@@ -84,10 +86,10 @@
             <div class="container">
                 <div class="wrapper">
                     <div class="wrapper__content">
-                        <div class="wrapper__content__title">
+                        <div class="wrapper__content__title" data-aos="fade-down">
                             <h2>MUSIC</h2>
                         </div>
-                        <div class="wrapper__content__player">
+                        <div class="wrapper__content__player" data-aos="fade-down">
                             <div class="wrapper__content__player--image">
                                 <img id="disc" src="./assets/pics/loooo.jpg" alt="">
                             </div>
@@ -98,10 +100,92 @@
                                     Your browser does not support the audio element.
                                 </audio>
                             </div>
-                            <div class="wrapper__content__player--buttons">
-                                <i class="fa-solid fa-2xl fa-backward"></i>
-                                <i id="playBtn" class="fa-solid fa-2xl fa-play"></i>
-                                <i class="fa-solid fa-2xl fa-forward"></i>
+                            <div class="wrapper__content__player--btnsPrgrs">
+                                <div class="progressContainer" id="progress-container">
+                                    <div class="progressContainer__progress" id="progress">
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <i class="fa-solid fa-2xl fa-backward"></i>
+                                    <i id="playBtn" class="fa-solid fa-2xl fa-play"></i>
+                                    <i class="fa-solid fa-2xl fa-forward"></i>
+                                </div>
+                            </div>
+                            <div class="wrapper__content__player--lyrics">
+                                <h2>"Do I wanna know"</h2>
+                                <p>
+                                <div>
+                                    Have you got colour in your cheeks?<br>
+                                    Do you ever get that fear that you can't shift<br>
+                                    The type that sticks around like summat in your teeth?<br>
+                                    Are there some aces up your sleeve?<br>
+                                    Have you no idea that you're in deep?<br>
+                                    I dreamt about you nearly every night this week<br>
+                                    How many secrets can you keep?<br>
+                                    'Cause there's this tune I found that makes me think of you somehow and I play it on
+                                    repeat<br>
+                                    Until I fall asleep<br>
+                                    Spilling drinks on my settee<br>
+                                    <br>
+                                    (Do I wanna know?)<br>
+                                    If this feeling flows both ways?<br>
+                                    (Sad to see you go)<br>
+                                    Was sort of hoping that you'd stay<br>
+                                    (Baby, we both know)<br>
+                                    That the nights were mainly made for saying things that you can't say tomorrow
+                                    day<br>
+                                    <br>
+                                    Crawling back to you<br>
+                                    <br>
+                                    Ever thought of calling when you've had a few?<br>
+                                    'Cause I always do<br>
+                                    Maybe I'm too busy being yours to fall for somebody new<br>
+                                    Now I've thought it through<br>
+                                    <br>
+                                    Crawling back to you<br>
+                                    <br>
+                                    So have you got the guts?<br>
+                                    Been wondering if your heart's still open and if so I wanna know what time it
+                                    shuts<br>
+                                    Simmer down and pucker up<br>
+                                    I'm sorry to interrupt. It's just I'm constantly on the cusp of trying to kiss
+                                    you<br>
+                                    I don't know if you feel the same as I do<br>
+                                    But we could be together if you wanted to<br>
+                                    <br>
+                                    (Do I wanna know?)<br>
+                                    If this feeling flows both ways?<br>
+                                    (Sad to see you go)<br>
+                                    Was sort of hoping that you'd stay<br>
+                                    (Baby, we both know)<br>
+                                    That the nights were mainly made for saying things that you can't say tomorrow
+                                    day<br>
+                                    <br>
+                                    Crawling back to you (crawling back to you)<br>
+                                    <br>
+                                    Ever thought of calling when you've had a few? (you've had a few)<br>
+                                    'Cause I always do ('cause I always do)<br>
+                                    Maybe I'm too (maybe I'm too busy) busy being yours to fall for somebody new<br>
+                                    Now I've thought it through<br>
+                                    <br>
+                                    Crawling back to you<br>
+                                    <br>
+                                    (Do I wanna know?)<br>
+                                    If this feeling flows both ways?<br>
+                                    (Sad to see you go)<br>
+                                    Was sort of hoping that you'd stay<br>
+                                    (Baby, we both know)<br>
+                                    That the nights were mainly made for saying things that you can't say tomorrow
+                                    day<br>
+                                    <br>
+                                    (Do I wanna know?)<br>
+                                    Too busy being yours to fall<br>
+                                    (Sad to see you go)<br>
+                                    Ever thought of calling darling?<br>
+                                    (Do I wanna know?)<br>
+                                    Do you want me crawling back to you?
+                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -111,7 +195,7 @@
         <section id="photos">
             <div class="container">
                 <div class="wrapper">
-                    <div class="wrapper__photos">
+                    <div class="wrapper__photos" data-aos="fade-right">
                         <span>PHOTOS</span>
                         <div class="wrapper__photos__carousel">
                             <div class="wrapper__photos__carousel--carouselItem"><img
@@ -132,7 +216,7 @@
                             <div class="dots"></div>
                         </div>
                     </div>
-                    <div class="wrapper__weare">
+                    <div class="wrapper__weare" data-aos="fade-down">
                         <h2>WE ARE</h2>
                         <p>
                             Alex Turner – Vocals <br>
@@ -149,7 +233,7 @@
         </section>
         <section id="info">
             <div class="container">
-                <div class="wrapper">
+                <div class="wrapper" data-aos="zoom-in">
                     <button class="wrapper__accordion">Alex Turner</button>
                     <div class="wrapper__panel">
                         <p>Alexander David Turner (born 6 January 1986) is an English singer, songwriter, and record
@@ -191,12 +275,12 @@
                             <span>VIDEO</span>
                             <a href="https://www.youtube.com/arcticmonkeys">See More</a>
                         </p>
-                        <video controls>
+                        <video controls data-aos="zoom-out-down">
                             <source src="./assets/vidoes/Why'd You Only Call Me When You're High.mp4" type="video/mp4">
                             Your browser does not support HTML video.
                         </video>
                     </div>
-                    <div class="wrapper__downloads">
+                    <div class="wrapper__downloads" data-aos="fade-down">
                         <h2>DOWNLOADS</h2>
                         <a class="wrapper__downloads__buttons" href="#">DOWNLOAD FULL BIO</a>
                         <a class="wrapper__downloads__buttons" href="#">DOWNLOAD PRESS RELEASE</a>
@@ -205,8 +289,29 @@
                 </div>
             </div>
         </section>
-
     </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper__navs">
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Help & FAQs</a></li>
+                        <li><a href="/">Contact Information</a></li>
+                    </ul>
+                </div>
+                <div class="wrapper__copyright">
+                    <h5>© 2023 Arctic Monkeys EU.</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./main.js" type="module"></script>
 </body>
 

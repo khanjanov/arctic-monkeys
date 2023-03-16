@@ -1,0 +1,30 @@
+#header {
+  padding: 20px 0;
+  .container {
+    .wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      &__store {
+        h2 {
+          color: #555555;
+          font-size: 24px;
+          font-weight: 400;
+          letter-spacing: 2px;
+        }
+      }
+      &__logo {
+        img {
+          width: 250px;
+        }
+      }
+      &__cart {
+        a {
+          color: #242423;
+        }
+      }
+    }
+  }
+}

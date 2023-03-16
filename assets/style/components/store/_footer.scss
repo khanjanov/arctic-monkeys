@@ -1,0 +1,41 @@
+#footer {
+  .container {
+    .wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 8% 20px 2%;
+      &__navs {
+        ul {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+          font-size: 12px;
+          li {
+            &:not(:last-child) {
+              border-right: 1px solid #242423;
+              padding-right: 12px;
+            }
+            &:hover {
+              a {
+                border-bottom: 1px solid;
+                padding-bottom: 4px;
+              }
+            }
+            a {
+              color: #242423;
+            }
+          }
+        }
+      }
+      &__copyright {
+        display: flex;
+        justify-content: center;
+        h5 {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

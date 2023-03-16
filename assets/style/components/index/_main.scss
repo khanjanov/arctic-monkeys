@@ -76,7 +76,7 @@
           &__player {
             display: flex;
             align-items: center;
-            gap: 5%;
+            gap: 20px;
             padding: 0 20px;
             &--image {
               position: relative;
@@ -111,10 +111,57 @@
                 }
               }
             }
-            &--buttons {
+            &--btnsPrgrs {
               display: flex;
-              gap: 40px;
-              cursor: pointer;
+              flex-direction: column;
+              gap: 20px;
+              .buttons {
+                display: flex;
+                gap: 40px;
+                cursor: pointer;
+                color: #242323;
+              }
+              .progressContainer {
+                background: #fff;
+                border: 2px solid #49584f;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 10px 0;
+                height: 4px;
+                width: 100%;
+                height: 8px;
+                &__progress {
+                  background-color: #49584f;
+                  border-radius: 5px;
+                  height: 100%;
+                  width: 0%;
+                  transition: width 0.1s linear;
+                }
+              }
+            }
+            &--lyrics {
+              display: flex;
+              flex-direction: column;
+              width: 400px;
+              height: 300px;
+              overflow-y: auto;
+              text-align: center;
+              gap: 12px;
+              margin-left: 32%;
+              visibility: hidden;
+              &::-webkit-scrollbar {
+                width: 8px;
+              }
+
+              &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+              }
             }
           }
         }

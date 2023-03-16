@@ -1,38 +1,30 @@
+@import "./reset";
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Clicker+Script&family=Fredoka+One&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Labrada:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300;400;500;600;700&family=Zeyada&display=swap");
-@import "./components/header";
-@import "./components/main";
-@import "./components/footer";
-@import "./mixvarres/mixins";
-@import "./mixvarres/reset";
-@import "./mixvarres/variables";
-
-// body::-webkit-scrollbar {
-//   width: 0.4em;
-// }
-
-// body::-webkit-scrollbar-track {
-//   box-shadow: inset 0 0 6px rgb(17, 58, 33);
-// }
-
-// body::-webkit-scrollbar-thumb {
-//   border-radius: 8px;
-//   background-color: #49584f;
-//   outline: 1px solid slategrey;
-// }
-
-//* second scrollbar
-html::-webkit-scrollbar {
-  width: 20px;
+@import "./storeHeader";
+@import "./main";
+@import "./footer";
+body {
+  background-color: #a09f81;
 }
 
-html::-webkit-scrollbar-track {
-  background-color: transparent;
+.navs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 20px 0;
+  background-color: #a09f81;
+  a {
+    font-size: 16px;
+    color: #5a5959;
+    &:nth-child(2) {
+      color: #242423;
+    }
+    &:hover {
+      border-bottom: 1px solid #242323;
+      padding-bottom: 4px;
+      color: #242323;
+    }
+  }
 }
-
-html::-webkit-scrollbar-thumb {
-  background-image: url("../pics/guitar.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90px;
-}
-
