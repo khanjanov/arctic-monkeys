@@ -18,13 +18,27 @@ body {
   a {
     font-size: 16px;
     color: #5a5959;
-    &:nth-child(2) {
-      color: #242423;
-    }
+    // &:nth-child(2) {
+    //   color: #242423;
+    // }
     &:hover {
       border-bottom: 1px solid #242323;
       padding-bottom: 4px;
       color: #242323;
     }
+  }
+}
+html {
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-image: url("/assets/pics/guitar.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px;
   }
 }

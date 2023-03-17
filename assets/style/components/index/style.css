@@ -954,4 +954,129 @@ html::-webkit-scrollbar-thumb {
 
 body {
   overflow-x: hidden;
+}
+body #up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 36px;
+  right: 12px;
+  width: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #49584f;
+  color: #dfdfdf;
+  opacity: 0.6;
+}
+
+input[type=range] {
+  height: 26px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #50555c;
+  background: #50555c;
+  border-radius: 14px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 12px;
+  width: 16px;
+  border-radius: 12px;
+  background: #529de1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -2px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #50555c;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #50555c;
+  background: #50555c;
+  border-radius: 14px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: #529de1;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #50555c;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #50555c;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #50555c;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #50555c;
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: #529de1;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #50555c;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #50555c;
+}
+
+.wrapper__content__player--wallpaper {
+  margin-left: 28%;
+  width: 400px;
+  height: 300px;
+}
+.wrapper__content__player--wallpaper img {
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

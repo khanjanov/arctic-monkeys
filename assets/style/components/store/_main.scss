@@ -25,11 +25,28 @@
             gap: 8px;
             transition: 0.5s all ease;
             border-radius: 12px;
-            // box-shadow: 4px 4px 4px #585854;
             background: linear-gradient(40deg, #555555, grey);
             box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+            &--options {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              position: absolute;
+              top: 20px;
+              right: 20px;
+              opacity: 0;
+              transition: 0.3s all ease-in-out;
+              .fa-solid {
+                color: #49584f;
+                &:hover {
+                  color: #e7bb42;
+                }
+              }
+            }
             &:hover {
-              // transform: scale(1.05);
+              .wrapper__cards__card--options {
+                opacity: 1;
+              }
             }
             img {
               width: 400px;
@@ -43,7 +60,7 @@
               letter-spacing: 2px;
             }
             h3 {
-              color: #555555;
+              color: #382100;
               font-weight: 400;
               font-size: 16px;
               padding: 20px;

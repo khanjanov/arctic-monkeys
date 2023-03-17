@@ -33,7 +33,7 @@
   width: 250px;
 }
 #header .container .wrapper__cart a {
-  color: #242423;
+  color: #49584f;
 }
 
 #main .items .container .wrapper {
@@ -65,6 +65,25 @@
   background: linear-gradient(40deg, #555555, grey);
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
 }
+#main .items .container .wrapper__cards__card--options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+#main .items .container .wrapper__cards__card--options .fa-solid {
+  color: #49584f;
+}
+#main .items .container .wrapper__cards__card--options .fa-solid:hover {
+  color: #e7bb42;
+}
+#main .items .container .wrapper__cards__card:hover .wrapper__cards__card--options {
+  opacity: 1;
+}
 #main .items .container .wrapper__cards__card img {
   width: 400px;
   height: 350px;
@@ -77,7 +96,7 @@
   letter-spacing: 2px;
 }
 #main .items .container .wrapper__cards__card h3 {
-  color: #555555;
+  color: #382100;
   font-weight: 400;
   font-size: 16px;
   padding: 20px;
@@ -133,11 +152,21 @@ body {
   font-size: 16px;
   color: #5a5959;
 }
-.navs a:nth-child(2) {
-  color: #242423;
-}
 .navs a:hover {
   border-bottom: 1px solid #242323;
   padding-bottom: 4px;
   color: #242323;
+}
+
+html::-webkit-scrollbar {
+  width: 20px;
+}
+html::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background-image: url("/assets/pics/guitar.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90px;
 }/*# sourceMappingURL=store.css.map */
