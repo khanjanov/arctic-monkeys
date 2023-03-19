@@ -16,10 +16,11 @@
             justify-content: center;
             align-items: center;
             gap: 16px;
-            border: 1px solid #586526;
+            border: none;
             border-radius: 12px;
             background: linear-gradient(40deg, #374931, grey);
             box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+            transition: 1s all ease-in-out;
             &--title {
               padding: 20px 0;
               h2 {
@@ -27,6 +28,8 @@
               }
             }
             &--image {
+              transition: 1s all ease-in-out;
+
               img {
                 width: 300px;
                 height: 250px;
@@ -69,4 +72,16 @@
 }
 body {
   overflow-x: hidden;
+  #up {
+    cursor: pointer;
+    position: fixed;
+    bottom: 36px;
+    right: 12px;
+    width: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #49584f;
+    color: #dfdfdf;
+    opacity: 0.6;
+  }
 }

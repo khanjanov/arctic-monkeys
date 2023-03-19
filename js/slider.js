@@ -10,16 +10,7 @@ function slider() {
   );
   let curSlide = 0;
   let lastSlide = slides.length - 1;
-  let createDots = function () {
-    slides.forEach(function (_, i) {
-      let dotsDiv = document.querySelector(".dots");
-      dotsDiv.insertAdjacentHTML(
-        "beforeend",
-        `<button class="dots__dot" data-slide="${i}"></button>`
-      );
-    });
-  };
-  createDots();
+  
   let goToSlide = function (a) {
     slides.forEach(
       (slide, index) =>

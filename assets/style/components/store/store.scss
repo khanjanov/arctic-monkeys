@@ -3,8 +3,22 @@
 @import "./storeHeader";
 @import "./main";
 @import "./footer";
+
 body {
   background-color: #a09f81;
+  overflow-x: hidden;
+  #up {
+    cursor: pointer;
+    position: fixed;
+    bottom: 36px;
+    right: 12px;
+    width: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: #49584f;
+    color: #dfdfdf;
+    opacity: 0.6;
+  }
 }
 
 .navs {

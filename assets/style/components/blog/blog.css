@@ -15,16 +15,20 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
-  border: 1px solid #586526;
+  border: none;
   border-radius: 12px;
   background: linear-gradient(40deg, #374931, grey);
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  transition: 1s all ease-in-out;
 }
 #main #posts .container .wrapper__cards__card--title {
   padding: 20px 0;
 }
 #main #posts .container .wrapper__cards__card--title h2 {
   color: #123133;
+}
+#main #posts .container .wrapper__cards__card--image {
+  transition: 1s all ease-in-out;
 }
 #main #posts .container .wrapper__cards__card--image img {
   width: 300px;
@@ -60,4 +64,16 @@
 
 body {
   overflow-x: hidden;
+}
+body #up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 36px;
+  right: 12px;
+  width: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #49584f;
+  color: #dfdfdf;
+  opacity: 0.6;
 }/*# sourceMappingURL=blog.css.map */
